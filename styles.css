@@ -1,0 +1,147 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Segoe UI", sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    background-color: #cc5200;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    background-color: #0066cc;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    position: relative;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav ul li:hover {
+    background-color: #993000;
+  }
+  
+  nav ul ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #005bb5;
+    display: none;
+    flex-direction: column;
+    min-width: 180px;
+  }
+  
+  nav ul li:hover > ul {
+    display: flex;
+  }
+  
+  nav ul ul li {
+    width: 100%;
+    border-top: 1px solid #0073e6;
+  }
+  
+  main {
+    max-width: 1000px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #cc5200;
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+  }
+  
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background: #f0f8ff;
+    border: 1px solid #cce0ff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .card h3 {
+    padding: 10px;
+    color: #004a99;
+  }
+  
+  .card p {
+    padding: 0 10px 10px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  input, textarea, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px;
+    border: none;
+    background-color: #0066cc;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #004a99;
+  }
+  .banner {
+    width: 20%;
+    max-height: 10px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+  }
+
+.banner {
+  width: 40%;
+  max-height: 450px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
